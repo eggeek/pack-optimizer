@@ -181,7 +181,7 @@ class PackRule:
     def gen_edges(self, items: list[Item]):
         subitems: list[Item] = []
         for it in items:
-            if it.idx in  self.cids:
+            if it.idx in self.cids:
                 subitems.append(it)
         self.g.clear()
         vec = Vert({it.idx: 0 for it in items})
