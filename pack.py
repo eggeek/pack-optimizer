@@ -185,7 +185,7 @@ class PackRule:
                 subitems.append(it)
         self.g.clear()
         vec = Vert({it.idx: 0 for it in items})
-        self.search(items, vec, 0)
+        self.search(subitems, vec, 0)
 
 def sol(items: list[Item], pack_rules: list[PackRule]):
     mem: dict[Vert, int] = {}
